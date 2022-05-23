@@ -169,8 +169,10 @@ document.getElementById('btnSSAmDuong').onclick = function() {
   for(var i = 0; i < numArray.length; i++) {
     if(numArray[i] > 0){
       soDuong++;
-    }else{
+    }else if(numArray[i] < 0){
       soAm++;
+    }else{
+      
     }
   }
   
