@@ -145,15 +145,11 @@ document.getElementById('btnTimSoNT').onclick = function() {
 // --------------------------------------------
 //Bài 9: Đếm có bao nhiêu số nguyên.
 document.getElementById('btnDemSoNguyen').onclick = function() {
-  var soNguyenArray = [];
-
-  var number = Number(document.getElementById('nSo').value);
-  soNguyenArray.push(number);
 
   var count = 0;
 
-  for(var i = 0; i < soNguyenArray.length; i++) {
-    if(Number.isInteger(soNguyenArray[i])){//Number.isInteger() <- Hàm có sẵn @@!
+  for(var i = 0; i < numArray.length; i++) {
+    if(Number.isInteger(numArray[i])){//Number.isInteger() <- Hàm có sẵn @@!
       count++;
     }
   }
